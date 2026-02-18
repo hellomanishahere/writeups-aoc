@@ -1,0 +1,16 @@
+#challenge one : Password Pandemonium
+
+An alert pops up as we log into TBFC workstation : “Weak passwords detected on 73 TBFC accounts!” 
+Here McSkidy’s password, P@ssw0rd123 has been flagged. 
+Strong Password is the only way seen . 
+
+# Objective:
+Create a password that passes all system checks and isn’t found in the leaked password list.
+
+# Steps:
+1. Entered password with at least 12 characters.
+2. Included uppercase, lowercase, numbers and symbols.
+3. Made sure it isn't in the breach database.       
+
+# FINAL FLAG 
+THM{StrongStart}
