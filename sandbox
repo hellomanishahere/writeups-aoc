@@ -1,0 +1,35 @@
+# Principles of Malware Analysis
+Malware analysis is the process of examining a malicious file to understand its functionality, operation and methods for defence against it. 
+By analysing a malicious file or application, we can see exactly how it operates, and therefore, know how to prevent it. 
+For example, could the malicious file communicate with an attacker's server? We can block that server.
+
+- Could the malicious file leave traces on the machine? 
+We can use these to determine if the malware has ever infected another device. 
+Instead of fearing malware, we can take a proactive approach by translating technical findings into practical defensive measures and understanding how the malware fits into an attacker's techniques.
+There are two main branches of malware analysis: static and dynamic. Static analysis focuses on inspecting a file without executing it, whereas dynamic analysis involves execution. We will come to these shortly.
+
+# Sandboxes
+In cyber security, sandboxes are used to execute potentially dangerous code. Think of this as disposable digital play-pens. 
+These sandboxes are safe, isolated environments where potentially malicious applications can perform their actions without risking sensitive data or impacting other systems.
+The use of sandboxes is part of the golden rule in malware analysis: never run dangerous applications on devices you care about.
+Most of the time, sandboxes present themselves as virtual machines. 
+
+Virtual machines are a popular choice for sandboxing because you can control how the system operates and benefit from features such as snapshotting, which allows you to create and restore the machine to various stages of its status.
+To reiterate, it is imperative to understand that potentially malicious code and applications should only be run in a safe, isolated environment. From now on, this room will refer to malicious code and applications as samples.
+
+# Static analysis: 
+
+- What is the SHA256Sum of the HopHelper.exe? 
+F29C270068F865EF4A747E2683BFA07667BF64E768B38FBB9A2750A3D879CA33
+
+- Within the strings of HopHelper.exe, a flag with the format THM{XXXXX} exists. What is that flag value?
+*this can be found towards the bottom of the strings output. 
+THM{STRINGS_FOUND}
+
+# Dynamic analysis: What registry value has the HopHelper.exe modified for persistence?
+*Provide the full path of the key that has been modified 
+HKU\S-1-5-21-1966530601-3185510712-10604624-1008\Software\Microsoft\Windows\CurrentVersion\Run\HopHelper
+
+- Filter the output of ProcMon for "TCP" operations. What network protocol is HopHelper.exe using to communicate?
+Make sure to have executed HopHelper.exe while ProcMon was open and capturing events. 
+
