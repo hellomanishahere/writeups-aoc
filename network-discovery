@@ -1,0 +1,39 @@
+Task : Discover Network Services
+
+STEP 1 : nmap -p- --script=banner MACHINE_IP    
+                  ftp MACHINE_IP 21212  (Note : Username & password = anonymous )  
+                  Type ls -la
+                  Use this command to grab the first key cmd : ->   get  tbfc_qa_key1
+
+STEP 2:  nc -v MACHINE_IP 25251  
+                  Type HELP    
+                   Use this command to grab the Second key cmd : ->   GET KEY 
+
+STEP 3:  Enter this cmd in terminal : --->    dig @MACHINE_IP TXT key3.tbfc.local +short   
+
+STEP 4: Open this  site by entering the machine ip address in your browser  http://MACHINE_IP  
+                 Now enter all the keys end to end without any space between them.
+                 And after that get into terminal by pressing "enter"   
+
+STEP 5:  Now in the browser terminal type this cmd :--->  mysql -D tbfcqa01 -e "show tables;"
+                  After this command you will see two tables first one is tabfcqa01 and other one is flag
+                  So now enter this command to grab the flag :--->  mysql -D tbfcqa01 -e "select * from flags;"   
+
+
+- What evil message do you see on top of the website? 
+Pwned by HopSec
+
+- What is the first key part found on the FTP server? 
+3aster_
+
+- What is the second key part found in the TBFC app? 
+15_th3_
+
+- What is the third key part found in the DNS records?
+ n3w_xm45
+
+- Which port was the MySQL database running on? 
+3306
+
+- what's the flag you found in the database? 
+THM{4ll_s3rvice5_d1sc0vered}
