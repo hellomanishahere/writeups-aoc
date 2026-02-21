@@ -1,0 +1,17 @@
+- What exact command lists running Docker containers?  
+Docker ps
+
+- What file is used to define the instructions for building a Docker image? 
+Dockerfile
+
+- What's the flag? 
+THM{DOCKER_ESCAPE_SUCCESS}
+
+- Bonus Question: There is a secret code contained within the news site running on port 5002; this code also happens to be the password for the deployer user! 
+They should definitely change their password. Can you find it? 
+DeployMaster2025!
+
+- CONCLUSION : Secure Your Containers Before Attackers Do
+Container security isn’t optional anymore, it’s a frontline defense. 
+Misconfigured images, vulnerable containers and weak runtime protections are actively exploited in the wild.
+  
