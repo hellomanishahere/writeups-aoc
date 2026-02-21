@@ -1,0 +1,27 @@
+Task 2 : Investigate the Gifts Delivery Malfunctioning
+
+# Windows Registry
+Your brain stores all the information that you need to function effectively. This includes:
+
+- How should you behave?
+- What would be the first thing you would do after waking up?
+- How would you dress yourself?
+- What are your habits?
+- What happened in the recent past?
+
+These are just a few things. Your brain knows pretty much everything about you. It's just like a database storing the human configuration.
+
+Windows OS is not a human but it also needs a brain to store all its configurations. This brain is known as the Windows Registry. 
+The registry contains all the information that the Windows OS needs for its functioning.
+Now, this Windows brain (Registry) is not stored in one single place, unlike a human brain which is situated in one single place inside the head. 
+It is made up of several separate files, each storing information on different configuration settings. These files are known as Hives.
+
+- What application was installed on the dispatch-srv01 before the abnormal activity started? 
+DroneManager Update 
+
+- What is the full path where the user launched the application (found in question 1) from? 
+C:\Users\dispatch.admin\Downloads\DroneManager_Setup.exe
+
+- Which value was added by the application to maintain persistence on startup? 
+"C:\Program Files\DroneManager\dronehelper.exe" --background
+
