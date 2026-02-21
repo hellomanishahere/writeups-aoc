@@ -1,0 +1,20 @@
+Task : Leave the Cookies, Take the Payload
+
+# Steps to find the flags :
+
+Flag 1 steps : 
+Use this payload in the search section above the message box 
+  <script>alert('Reflected Meow Meow')</script>
+
+Flag 2 steps : 
+Use this payload in the message box 
+<script>alert('Stored Meow Meow')</script>
+
+- Which type of XSS attack requires payloads to be persisted on the backend? 
+Stored
+
+- What's the reflected XSS flag? 
+THM{Evil_Bunny}
+
+- What's the stored XSS flag? 
+THM{Evil_Stored_Egg}
