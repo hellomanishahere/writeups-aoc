@@ -99,12 +99,77 @@ THM{LeakedAndFound}
 
 -----
 
-# challenge 
+# challenge 7 - WiFi Woes in Wareville
+
+The TBFC drones are looping endlessly over Wareville Square. Someone logged into the company router using default credentials!
+Securing WiFi is critical. Default passwords are like leaving the front gate wide open.
+
+# Objective: Log into the router and secure it with a strong new password.
+
+# Steps:
+1. Log in with username admin and password admin.
+2. Go to Security Settings.
+3. Set a new strong password that passes validation.
+
+# FINAL FLAG : 
+ THM{NoMoreDefault}
+
+-----
+
+# Challenge 8 — The App Trap
+
+McSkidy’s social account has gone rogue, posting strange messages about EASTMAS. A suspicious third party app may be behind it.
+Learning to review and manage app permissions helps stop data leaks before they start.
+
+# Objective: Find and remove the malicious connected app.
+
+# Steps:
+1. Review the list of connected apps.
+2. Look for one with unusual permissions (like password vault access).
+3. Click Revoke Access.
+
+# FINAL FLAG : 
+ THM{AppTrapped}
 
 
+-----
+
+# Challenge 9 — The Chatbot Confession
+
+TBFC’s AI assistant, FestiveBot was meant to help write cheerful emails but it’s been spilling secrets.
+Some messages reveal internal URLs and even passwords. AI tools can be powerful but defenders must know how to prevent them from oversharing.
+
+# Objective: to identify which chatbot messages contain sensitive information.
+
+# Steps:
+1. Read each line of the conversation.
+2 . Select the ones containing private data.
+3 .Submit your findings.
+
+# FINAL FLAG : 
+THM{DontFeedTheBot}
 
 
+-----
 
+# Challenge 10 — The Bunny’s Browser Trail
+
+SOCMAS web servers are showing heavy traffic but one log entry stands out: “User Agent: BunnyOS/1.0 (HopSecBot)”
+Someone or something has infiltrated the system.
+
+User Agent strings help defenders spot automated or suspicious visitors in network logs.
+
+# Objective: to Find the unusual User Agent in the HTTP log.
+
+# Steps:
+1. Read the provided web log entries.
+2. Compare them to common browsers (Chrome, Firefox, Edge).
+3 . Identify and select the suspicious entry.
+
+# FINAL FLAG : 
+ THM{EastmasIsComing}
+
+--
 
 
 
